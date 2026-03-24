@@ -1,0 +1,68 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../images/arrozdemarisco.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 15px 0;
+    z-index: 1000; /* Ensure it's above everything */
+    color: white;
+    font-size: 20px;
+}
+
+#container {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#divName,
+#divAbout,
+#divMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#divName {
+    grid-area: 4 / 1 / 5 / 3;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+#divAbout {
+    grid-area: 3 / 3 / 4 / 4;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#divMenu {
+    grid-area: 3 / 3 / 4 / 4;
+    font-weight: 900;
+    flex-direction: column;
+    font-size: 28px;
+}
+
+#menuTitle {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
