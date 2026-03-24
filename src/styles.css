@@ -25,6 +25,10 @@ header {
     font-size: 20px;
 }
 
+header nav {
+    cursor: pointer;
+}
+
 #container {
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(5, 1fr);
