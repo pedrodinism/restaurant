@@ -27,6 +27,7 @@ class Restaurant {
 
     init() {
         this.home()
+        console.log('hello world')
 
         document.querySelector('header').addEventListener('click', (e) => {
             const id = e.target.id;
